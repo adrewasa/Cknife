@@ -7,6 +7,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JDialog;
 import javax.swing.JTabbedPane;
 
+import com.ms509.ui.config.panel.CommonSettingPanel;
 import com.ms509.ui.config.panel.RequestPanel;
 import com.ms509.ui.config.panel.ProxyPanel;
 
@@ -30,6 +31,7 @@ public class ConfigDialog extends JDialog{
 		JTabbedPane pane = new JTabbedPane();
 		pane.addTab("代理", new ProxyPanel());
 		pane.addTab("请求头", new RequestPanel());
+		pane.addTab("通用", new CommonSettingPanel());
 		this.getContentPane().add(pane);
 	}
 }

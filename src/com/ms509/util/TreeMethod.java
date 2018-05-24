@@ -54,6 +54,13 @@ public class TreeMethod {
 		tree.setSelectionModel(dsmodel);
 	}
 
+	/**
+	 * 为parent设置子节点
+	 * 这边的trees就是文件夹的名称
+	 * @param trees
+	 * @param parent
+	 * @param model
+	 */
 	public static void addTree(String[] trees, DefaultMutableTreeNode parent,
 			DefaultTreeModel model) {
 		ArrayList<String> al = new ArrayList<String>();
